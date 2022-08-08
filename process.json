@@ -1,0 +1,9 @@
+{
+  "name": "GRPC-Server Prod",
+  "script": "ts-node",
+  "args": ["src/machines/template/index.ts"],
+  "watch": ["src"],
+  "max_memory_restart": "200M",
+  "max_restarts": 20,
+  "ignore_watch": ["node_modules", "data/*.json", "dist", ".git"]
+}
